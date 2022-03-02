@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-		<link rel="stylesheet" href="styles.css" />
-
-		<title>Frontend Mentor | Calculator app</title>
-	</head>
-	<body>
-		<div class="app" data-theme="1">
-			<div class="header">
-				<span class="logo">calc</span>
-				<div class="theme">
-					<span class="label">THEME</span>
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-					</ul>
-					<div class="toggle"></div>
-				</div>
-			</div>
-			<div class="screen">
-				<span class="content">399,981</span>
-			</div>
-			<div class="keypad">
-				<div class="key">7</div>
-				<div class="key">8</div>
-				<div class="key">9</div>
-				<div class="key alt" data-del>DEL</div>
-				<div class="key">4</div>
-				<div class="key">5</div>
-				<div class="key">6</div>
-				<div class="key alt" data-plus>+</div>
-				<div class="key">1</div>
-				<div class="key">2</div>
-				<div class="key">3</div>
-				<div class="key alt" data-minus>-</div>
-				<div class="key alt" data-comma>.</div>
-				<div class="key">0</div>
-				<div class="key alt" data-divide>/</div>
-				<div class="key alt" data-times>x</div>
-				<div class="key alt" data-reset>RESET</div>
-				<div class="key alt" data-equals>=</div>
-			</div>
-			<div class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-					>Frontend Mentor</a
-				>. Coded by <a href="#">Linus Falk</a>.
-			</div>
-		</div>
-	</body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="app" data-theme="2">
+      <div class="header">
+        <span class="logo">calc</span>
+        <div class="theme">
+          <span class="label">THEME</span>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <div class="toggle"></div>
+        </div>
+      </div>
+      <div class="screen" data-screen>
+        <span class="content"></span>
+      </div>
+      <div class="keypad">
+        <button class="key" data-key="7">7</button>
+        <button class="key" data-key="8">8</button>
+        <button class="key" data-key="9">9</button>
+        <button class="key alt" data-key="del">DEL</button>
+        <button class="key" data-key="4">4</button>
+        <button class="key" data-key="5">5</button>
+        <button class="key" data-key="6">6</button>
+        <button class="key" data-key="plus">+</button>
+        <button class="key" data-key="1">1</button>
+        <button class="key" data-key="2">2</button>
+        <button class="key" data-key="3">3</button>
+        <button class="key" data-key="minus">-</button>
+        <button class="key" data-key=".">.</button>
+        <button class="key" data-key="0">0</button>
+        <button class="key" data-key="divide">/</button>
+        <button class="key" data-key="times">x</button>
+        <button class="key alt" data-key="reset">RESET</button>
+        <button class="key alt" data-key="equals">=</button>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Linus Falk</a>.
+      </div>
+    </div>
+  </body>
 </html>
